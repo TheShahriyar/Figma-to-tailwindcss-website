@@ -630,5 +630,6 @@ input::placeholder {
   position: absolute;
   top: 0;
   left: 0;
+  width: 40%;
   z-index: -1;
 }
