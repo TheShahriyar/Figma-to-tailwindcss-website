@@ -42,31 +42,17 @@ a:focus {
   outline: none;
 }
 
+p span {
+  color: #A34FF2 !important;
+}
+
 .gradient-bg {
   background: #A34FF2;
   background: linear-gradient(to right, #A34FF2, #5046F0);
 }
 
-.right-half,
-.left-half {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  background-position: center center;
-  background-size: cover;
-}
-.right-half.width33,
-.left-half.width33 {
-  width: 33%;
-}
-.right-half.width50,
-.left-half.width50 {
-  width: 50%;
-}
-
-.left-half {
-  left: 0;
+input::placeholder {
+  color: #232323;
 }
 
 .bg-overlay-dark:before {

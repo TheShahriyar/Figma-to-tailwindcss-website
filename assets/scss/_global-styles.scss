@@ -54,6 +54,12 @@ a {
   outline: none;
 }
 
+p {
+  span {
+    color: $brand-primary !important;
+  }
+}
+
 .gradient-bg {
   background: $brand-primary;
   background: -webkit-linear-gradient(to right, $brand-primary, $brand-primary2);
@@ -61,26 +67,8 @@ a {
 
 }
 
-.right-half,
-.left-half {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  background-position: center center;
-  background-size: cover;
-
-  &.width33 {
-    width: 33%;
-  }
-
-  &.width50 {
-    width: 50%;
-  }
-}
-
-.left-half {
-  left: 0;
+input::placeholder {
+  color: #232323;
 }
 
 
