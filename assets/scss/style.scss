@@ -79,9 +79,40 @@
   }
 }
 
+@media (min-width:768px) and (max-width:1199px) {
+  .gallery-wrapper {
+    li {
+      &:nth-child(2n+1) {
+        margin-top: 3rem;
+      }
+    }
+  }
+
+  .list {
+    &__item {
+      width: 33%;
+    }
+  }
+}
+
+@media (max-width:767px) {
+  .gallery-wrapper {
+    li {
+      &:nth-child(2n+1) {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .list {
+    &__item {
+      width: 50%;
+    }
+  }
+}
+
 .black-bg {
   background: #232323;
-  width: 40%;
   height: 100%;
   position: absolute;
   top: 0;

@@ -27,14 +27,14 @@
   <section class="header-section p-4">
     <div class="container mx-auto">
       <div class="flex justify-between items-center">
-        <div class="logo flex-1">
+        <div class="logo xl:flex-1 md:mr-32 xl:mr-0">
           <img src="./assets/images/logo.png" alt="Logo" />
         </div>
-        <div class="social flex justify-end flex-1">
-          <div><i class="fa fa-instagram"></i> 105k</div>
+        <div class="social flex lg:justify-end lg:flex-1 lg:mr-8 xl:mr-0">
+          <div class="mr-6"><i class="fa fa-instagram"></i> 105k</div>
           <div><i class="fa fa-facebook"></i> 25k</div>
         </div>
-        <div class="navigation flex items-center flex-1 ml-32">
+        <div class="navigation flex items-center justify-end flex-1 xl:ml-32">
           <div class="nav-item dropdown">
             <a href="#" class="font-medium">Products</a>
             <div class="dropdown-item flex flex-col hidden">
@@ -63,7 +63,7 @@
   <section class="page-title-section py-20">
     <div class="container mx-auto">
       <div class="text-center w-3/5 mx-auto">
-        <h1 class="text-6xl font-bold mb-12">Photo Guide</h1>
+        <h1 class="xl:text-6xl md:text-4xl lg:text-5xl text-3xl font-bold lg:mb-12 mb-5">Photo Guide</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porttitor tincidunt erat quis 
           aliquam. Suspendisse sed odio a tellus commodo dictum vitae vitae metus</p>
       </div>
@@ -73,26 +73,26 @@
 
   <!--Start Tips Section-->
   <section class="tips-section gradient-bg py-20">
-    <div class="container mx-auto">
-      <div class="grid grid-cols-2">
-        <ul class="tips-image grid grid-cols-2 gap-4 mr-24">
-          <li><img src="./assets/images/img1.jpg" alt="image" class="mt-20" /></li>
+    <div class="container mx-auto px-4 lg:px-0">
+      <div class="xl:grid xl:grid-cols-2 flex flex-col md:flex-row items-start">
+        <ul class="tips-image lg:grid lg:grid-cols-2 gap-4 xl:mr-24 md:mr-16 md:ml-8 lg:ml-4 xl:ml-0 w-full">
+          <li><img src="./assets/images/img1.jpg" alt="image" class="lg:mt-20" /></li>
           <li><img src="./assets/images/img2.jpg" alt="image" /></li>
           <li><img src="./assets/images/img3.jpg" alt="image" /></li>
-          <li><img src="./assets/images/img4.jpg" alt="image" class="-mt-7" /></li>
+          <li><img src="./assets/images/img4.jpg" alt="image" class="xl:-mt-8 md:-mt-12" /></li>
         </ul>
-        <div class="tips-part text-white">
-          <h2 class="text-6xl text-white pb-12">Tips from our team</h2>
+        <div class="tips-part text-white mt-10 md:mt-0">
+          <h2 class="xl:text-6xl md:text-4xl lg:text-5xl text-3xl text-white pb-8 md:pb-12">Tips from our team</h2>
           <ul class="pb-14">
-            <li class="pb-7"><i class="fa fa-check-circle"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li class="pb-7"><i class="fa fa-check-circle"></i> Lorem ipsum dolor sit amet, consectetur adipiscing.</li>
             <li class="pb-7"><i class="fa fa-check-circle"></i> Lorem ipsum dolor sit amet, consectetur</li>
-            <li class="pb-7"><i class="fa fa-check-circle"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li class="pb-7"><i class="fa fa-check-circle"></i> Lorem ipsum dolor sit amet, consectetur adipiscing.</li>
             <li><i class="fa fa-check-circle"></i> Lorem ipsum dolor sit amet, consectetur</li>
           </ul>
           <ul>
-            <li class="pb-7"><i class="fa fa-times-circle-o"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li class="pb-7"><i class="fa fa-times-circle-o"></i> Lorem ipsum dolor sit amet, consectetur adipiscing.</li>
             <li class="pb-7"><i class="fa fa-times-circle-o"></i> Lorem ipsum dolor sit amet</li>
-            <li class="pb-7"><i class="fa fa-times-circle-o"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li class="pb-7"><i class="fa fa-times-circle-o"></i> Lorem ipsum dolor sit amet, consectetur adipiscing.</li>
             <li><i class="fa fa-times-circle-o"></i> Lorem ipsum dolor sit amet</li>
           </ul>
         </div>
@@ -104,7 +104,7 @@
 
   <!--Start Photo Gallery Section-->
   <section class="photo-gallery-section pt-16">
-    <h2 class="text-6xl pb-12 text-center">Good Pet Pic Gallery</h2>
+    <h2 class="xl:text-6xl md:text-4xl lg:text-5xl text-3xl pb-12 text-center">Good Pet Pic Gallery</h2>
     <div class="gallery-wrapper wrap wrap--logobar" id="gallery-wrapper">
       <ul class="flex flex-nowrap list" id="list">
         <li class="list__item">
@@ -146,8 +146,8 @@
 
   <!--Start Text Section-->
   <section class="text-section pb-24" style="background-color: #fbfbfb;">
-    <div class="container mx-auto">
-      <h3 class="text-4xl pb-11">Please Note :</h3>
+    <div class="container mx-auto px-4 md:px-8 xl:px-0">
+      <h3 class="text-2xl md:text-3xl xl:text-4xl pb-11">Please Note :</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porttitor tincidunt erat quis 
         aliquam. Suspendisse sed odio a tellus commodo dictum vitae vitae metus. Sed nulla tellus, 
         tristique ut dolor tempus, auctor hendrerit tellus. Cras consectetur elit sapien, vitae commodo 
@@ -158,11 +158,11 @@
   <!--End Text Section-->
 
   <!--Start Footer Section-->
-  <section class="footer-section relative py-16">
-    <div class="black-bg"></div>
-    <div class="container mx-auto">
-      <div class="footer-content flex">
-        <div class="left-part w-2/5">
+  <section class="footer-section relative md:py-16 pt-16">
+    <div class="black-bg hidden md:block"></div>
+    <div class="container mx-auto md:px-8 xl:px-0">
+      <div class="footer-content flex flex-col md:flex-row">
+        <div class="left-part w-full md:w-2/5 order-2 md:order-1 bg-black md:bg-transparent p-4 pb-10 md:p-0">
           <img src="./assets/images/logo-white.png" alt="Logo" />
           <ul class="mt-20">
             <li><a href="#" class="text-white">Our Mission</a></li>
@@ -177,17 +177,19 @@
             <li><a href="#" class="text-white">Shipping Information</a></li>
             <li><a href="#" class="text-white">Return and Refund Policy</a></li>
           </ul>
-          <div class="copyright text-white mt-24">
-            © Printy Pets 2021
-            <span class="ml-20"><i class="fa fa-pinterest"></i> 105k</span>
-            <span class="ml-16"><i class="fa fa-facebook"></i> 25k</span>
+          <div class="copyright text-white mt-24 flex flex-col xl:flex-row">
+            <div>© Printy Pets 2021</div>
+            <div>
+              <span class="xl:ml-20"><i class="fa fa-pinterest"></i> 105k</span>
+            <span class="ml-8 xl:ml-16"><i class="fa fa-facebook"></i> 25k</span>
+            </div>
           </div>
         </div>
-        <div class="right-part w-3/5 pl-24">
+        <div class="right-part w-full md:w-3/5 pl-4 xl:pl-24 lg:pl-20 md:pl-16 pb-10 order-1 md:order-2">
           <div class="text-base pb-8 tracking-wider font-semibold">NEWSLETTER</div>
-          <h1 class="text-6xl pb-12 w-3/4 leading-tight">Get special offers, free giveaways, once-in-a-lifeime deals.</h1>
+          <h1 class="xl:text-6xl md:text-4xl lg:text-5xl text-3xl pb-12 xl:w-3/4 leading-tight">Get special offers, free giveaways, once-in-a-lifeime deals.</h1>
           <div class="form-group flex pb-14">
-            <input type="email" placeholder="Email" class="bg-gray-100 p-4 pl-6" />
+            <input type="email" placeholder="Email" class="bg-gray-100 p-4 pl-6 md:w-3/5 xl:w-auto" />
             <button type="submit" class="gradient-bg py-4 px-8 flex text-white font-bold">Join <img src="./assets/images/click.svg" alt="icon" class="pl-3" /></button>
           </div>
           <p>P.S. Use the <span>#PrintyPets</span> hashtag when you show your friends your custom pet art, because you could win a $50 voucher every month!</p>
