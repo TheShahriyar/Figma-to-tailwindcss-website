@@ -1,5 +1,4 @@
 //Global Styles Start
-
 body {
   font-family: $text-font !important;
   color: $text-color;
@@ -70,25 +69,6 @@ p {
 input::placeholder {
   color: #232323;
 }
-
-
-
-.bg-overlay-dark {
-  &:before {
-    content: "";
-    background-color: rgba(27, 26, 26, 0.75);
-    display: inline-block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-  }
-}
-
-
-
 //FontAwesome override start
 .fa-ul {
   li {
@@ -102,31 +82,5 @@ input::placeholder {
 }
 
 //FontAwesome override end
-
-//--------------------------
-// Owl Carousel Buttons
-//--------------------------
-.owl-carousel {
-  .owl-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-
-    .owl-dot {
-      background: transparent;
-      width: 10px;
-      height: 10px;
-      border-radius: 100%;
-      border: 2px solid #888;
-      margin-left: 2px;
-      margin-right: 2px;
-
-      &.active {
-        background: $brand-primary;
-        border-color: $brand-primary;
-      }
-    }
-  }
-}
 
 //Global Styles End
