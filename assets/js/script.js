@@ -26,4 +26,14 @@ document.addEventListener('DOMContentLoaded', _ => {
     listElem.style.marginLeft = `${currentLeftValue}px`;
     currentLeftValue--;
   }
+
+  //Navbar Toggle Button
+  let toggleBtn = document.querySelector(".nav-button");
+  let navWrapper = document.querySelector(".nav-wrapper");
+  toggleBtn.onclick = function () {
+    navWrapper.classList.toggle("show");
+  }
+
+
+  
 });

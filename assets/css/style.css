@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Poppins", sans-serif !important;
   color: #232323;
@@ -560,6 +561,33 @@ input::placeholder {
   width: 25%;
 }
 
+@media (min-width: 768px) {
+  .nav-item .dropdown-item {
+    display: none;
+  }
+  .nav-item.dropdown a:after {
+    content: "";
+    font-family: "FontAwesome";
+    margin-left: 3px;
+  }
+  .nav-item.dropdown:hover .dropdown-item {
+    display: block;
+  }
+
+  .dropdown-item {
+    position: absolute;
+    width: 250px;
+    background: #A34FF2;
+    background: linear-gradient(to right, #A34FF2, #5046F0);
+    top: 40px;
+    left: 0;
+    padding: 20px;
+  }
+  .dropdown-item a {
+    color: #fff;
+    font-size: 16px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1199px) {
   .gallery-wrapper li:nth-child(2n+1) {
     margin-top: 3rem;
@@ -576,6 +604,24 @@ input::placeholder {
 
   .list__item {
     width: 50%;
+  }
+
+  .nav-wrapper {
+    display: none;
+  }
+  .nav-wrapper.show {
+    display: block;
+    background: #A34FF2;
+    background: linear-gradient(to right, #A34FF2, #5046F0);
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    padding: 20px 30px;
+  }
+
+  .dropdown-item a {
+    font-size: 16px;
   }
 }
 .black-bg {
