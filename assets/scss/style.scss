@@ -86,7 +86,7 @@
       display: none;
     }
     &.dropdown {
-      a:after {
+      > a:after {
         content: "\f107";
         font-family: $fontawesome;
         margin-left: 3px;

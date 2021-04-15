@@ -565,7 +565,7 @@ input::placeholder {
   .nav-item .dropdown-item {
     display: none;
   }
-  .nav-item.dropdown a:after {
+  .nav-item.dropdown > a:after {
     content: "";
     font-family: "FontAwesome";
     margin-left: 3px;
