@@ -1,0 +1,90 @@
+
+@import "variable";
+@import "global-styles";
+@import "navbar";
+
+//--------------------------------------
+// Start Top Header Section
+//--------------------------------------
+.top-header-section {
+  
+}
+
+.page-title-section {
+  background-color: #fbfbfb;
+}
+
+.tips-image {
+  //display: flex;
+  flex-wrap: wrap;
+
+  li {
+    //width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+.photo-gallery-section {
+  background-color: #fbfbfb;
+}
+
+.gallery-wrapper {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+
+  li {
+    &:nth-child(2n+1) {
+      margin-top: 7rem;
+    }
+
+    img {
+      width: 100%;
+
+      &:first-child {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.wrap {
+  margin: 0 auto;
+
+
+  &--logobar {
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-left: 0;
+
+  &__item {
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 20px;
+    text-align: center;
+    width: 25%;
+  }
+}
+
+.black-bg {
+  background: #232323;
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

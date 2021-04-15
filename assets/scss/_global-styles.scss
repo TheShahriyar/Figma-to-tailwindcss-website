@@ -1,0 +1,144 @@
+//Global Styles Start
+
+body {
+  font-family: $text-font !important;
+  color: $text-color;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 0;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  color: $title-color;
+  font-family: $heading-font !important;
+}
+
+a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    text-decoration: none;
+    outline: 0;
+  }
+}
+
+::-moz-selection {
+  background: $brand-primary;
+  color: #fff;
+  text-shadow: none;
+  outline: none;
+}
+
+::selection {
+  background: $brand-primary;
+  color: #fff;
+  text-shadow: none;
+  outline: none;
+}
+
+.gradient-bg {
+  background: $brand-primary;
+  background: -webkit-linear-gradient(to right, $brand-primary, $brand-primary2);
+  background: linear-gradient(to right, $brand-primary, $brand-primary2);
+
+}
+
+.right-half,
+.left-half {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+
+  &.width33 {
+    width: 33%;
+  }
+
+  &.width50 {
+    width: 50%;
+  }
+}
+
+.left-half {
+  left: 0;
+}
+
+
+
+.bg-overlay-dark {
+  &:before {
+    content: "";
+    background-color: rgba(27, 26, 26, 0.75);
+    display: inline-block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+
+
+//FontAwesome override start
+.fa-ul {
+  li {
+    padding: 5px 0;
+
+    .fa-li {
+      margin-top: 8px;
+      color: $brand-primary;
+    }
+  }
+}
+
+//FontAwesome override end
+
+//--------------------------
+// Owl Carousel Buttons
+//--------------------------
+.owl-carousel {
+  .owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .owl-dot {
+      background: transparent;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      border: 2px solid #888;
+      margin-left: 2px;
+      margin-right: 2px;
+
+      &.active {
+        background: $brand-primary;
+        border-color: $brand-primary;
+      }
+    }
+  }
+}
+
+//Global Styles End
