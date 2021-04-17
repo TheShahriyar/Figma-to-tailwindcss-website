@@ -149,12 +149,11 @@
     display: none;
     &.show {
       display: block;
-      background: $brand-primary;
-      background: -webkit-linear-gradient(to right, $brand-primary, $brand-primary2);
-      background: linear-gradient(to right, $brand-primary, $brand-primary2);
+      background: #fff;
       position: absolute;
-      top: 100%;
+      top: 0;
       width: 100%;
+      height: 100%;
       left: 0;
       padding: 20px 30px;
     }
@@ -165,6 +164,10 @@
       font-size: 16px;
     }
   }
+}
+
+.nav-button {
+  color: $brand-primary;
 }
 
 .black-bg {

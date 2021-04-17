@@ -23,41 +23,46 @@
   <!--End Top Header Section-->
 
   <!--Start Header Section-->
-  <section class="header-section p-4 relative">
+  <section class="header-section p-4">
     <div class="container mx-auto">
       <div class="flex justify-between items-center">
-        <div class="logo xl:flex-1 md:mr-32 xl:mr-0">
-          <img src="./assets/images/logo.png" alt="Logo" />
+        <div class="logo xl:flex-1 md:mr-32 xl:mr-0 order-2 md:order-1">
+          <img src="./assets/images/logo.png" alt="Logo" class="w-3/5 md:w-auto" />
         </div>
-        <div class="social flex lg:justify-end lg:flex-1 lg:mr-8 xl:mr-0">
+        <div class="social hidden md:flex lg:justify-end lg:flex-1 lg:mr-8 xl:mr-0 md:order-2">
           <div class="mr-6"><i class="fa fa-instagram"></i> 105k</div>
           <div><i class="fa fa-facebook"></i> 25k</div>
         </div>
-        <div class="navigation flex items-center justify-end md:flex-1 xl:ml-24">
-          <div class="nav-button block md:hidden">
+        <div class="navigation flex items-center justify-end md:flex-1 xl:ml-24 order-1 md:order-3">
+          <div class="nav-button cursor-pointer block md:hidden">
             <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </div>
           <div class="nav-wrapper flex items-center">
-            <div class="nav-item dropdown relative">
-              <a href="#" class="font-medium">Products</a>
-              <div class="dropdown-item flex flex-col ml-5 md:ml-0">
+            <div class="close-btn">
+              <svg class="h-10 w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </div>
+            <div class="nav-item relative mt-8 md:mt-0">
+              <a href="#" class="font-bold md:font-medium text-3xl md:text-base">Products</a>
+              <!-- <div class="dropdown-item flex flex-col ml-5 md:ml-0">
                 <a href="#">Dropdown Nav 1</a>
                 <a href="#">Dropdown Nav 2</a>
                 <a href="#">Dropdown Nav 3</a>
-              </div>
+              </div> -->
             </div>
-            <div class="nav-item md:mx-12">
-              <a href="#" class="font-medium">About</a>
+            <div class="nav-item md:mx-12 mt-4 md:mt-0">
+              <a href="#" class="font-bold md:font-medium text-3xl md:text-base">About</a>
             </div>
-            <div class="nav-item">
-              <a href="#" class="font-medium">Sign In</a>
-            </div>
-            <div class="nav-item md:ml-12">
-              <a href="#"><img src="./assets/images/cart.png" alt="Cart icon" /></a>
+            <div class="nav-item mt-4 md:mt-0">
+              <a href="#" class="font-bold md:font-medium text-3xl md:text-base">Sign In</a>
             </div>
           </div>
+        </div>
+        <div class="cart-icon md:ml-12 order-4">
+          <a href="#"><img src="./assets/images/cart.png" alt="Cart icon" /></a>
         </div>
       </div>
     </div>
@@ -183,9 +188,9 @@
             <li><a href="#" class="text-white">Shipping Information</a></li>
             <li><a href="#" class="text-white">Return and Refund Policy</a></li>
           </ul>
-          <div class="copyright text-white mt-24 flex flex-col xl:flex-row">
+          <div class="copyright text-white mt-24 flex">
             <div>© Printy Pets 2021</div>
-            <div>
+            <div class="ml-12 md:ml-0">
               <span class="xl:ml-20"><i class="fa fa-pinterest"></i> 105k</span>
             <span class="ml-8 xl:ml-16"><i class="fa fa-facebook"></i> 25k</span>
             </div>
@@ -199,13 +204,15 @@
             <button type="submit" class="gradient-bg py-4 px-8 flex text-white font-bold">Join <img src="./assets/images/click.svg" alt="icon" class="pl-3" /></button>
           </div>
           <p>P.S. Use the <span>#PrintyPets</span> hashtag when you show your friends your custom pet art, because you could win a $50 voucher every month!</p>
-          <div class="pt-20 flex">
+          <div class="pt-20 flex flex-col md:flex-row">
             <p class="mr-12">Powered by Shopify</p>
-            <img src="./assets/images/amex.png" alt="payment" class="mr-4" />
-            <img src="./assets/images/ipay.png" alt="payment" class="mr-4" />
-            <img src="./assets/images/mastercard.png" alt="payment" class="mr-4" />
-            <img src="./assets/images/paypal.png" alt="payment" class="mr-4" />
-            <img src="./assets/images/visa.png" alt="payment" />
+            <div class="flex mt-3 md:mt-0">
+              <img src="./assets/images/amex.png" alt="payment" class="mr-4" />
+              <img src="./assets/images/ipay.png" alt="payment" class="mr-4" />
+              <img src="./assets/images/mastercard.png" alt="payment" class="mr-4" />
+              <img src="./assets/images/paypal.png" alt="payment" class="mr-4" />
+              <img src="./assets/images/visa.png" alt="payment" />
+            </div>
           </div>
         </div>
       </div>

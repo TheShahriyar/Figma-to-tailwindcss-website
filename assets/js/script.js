@@ -29,9 +29,13 @@ document.addEventListener('DOMContentLoaded', _ => {
 
   //Navbar Toggle Button
   let toggleBtn = document.querySelector(".nav-button");
+  let closeBtn = document.querySelector(".close-btn");
   let navWrapper = document.querySelector(".nav-wrapper");
   toggleBtn.onclick = function () {
-    navWrapper.classList.toggle("show");
+    navWrapper.classList.add("show");
+  }
+  closeBtn.onclick = function () {
+    navWrapper.classList.remove("show");
   }
 
 
